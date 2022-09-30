@@ -7,7 +7,8 @@ export function Header() {
   const links = [
     { name: "HOME", link: "#home" },
     { name: "ABOUT", link: "#about" },
-    { name: "PROJETOS", link: "/" },
+    { name: "SKILLS", link: "#skills" },
+    { name: "PROJETOS", link: "#projects" },
     { name: "CONTATO", link: "/" },
   ]
 
@@ -20,7 +21,7 @@ export function Header() {
 
   return (
     <header className='shadow-md w-full fixed top-0 left-0'>
-      <nav className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+      <nav className='md:flex items-center justify-between bg-[#EBEBEB] dark:bg-[#2C2C2C] dark:text-white text-[#F9A826] py-4 md:px-10 px-7'>
         <div className='cursor-pointer flex items-center'>
           <span className='mr-1 '>logo</span>
           Dev. Front-end
@@ -32,14 +33,14 @@ export function Header() {
 
         <ul className={`
           md:flex md:items-center md:pb-0 pb-12 absolute md:static
-          bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 
-          transition-all duration-700 ease-in 
-          ${menuMobile ? 'top-[3.6rem] opacity-100' : 'top-[-490px]  opacity-0'} 
+          bg-[#EBEBEB] md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9      
+          transition-all duration-[900ms] ease-in 
+          ${menuMobile ? 'top-[3.8rem] opacity-100' : 'top-[-490px]  opacity-0'} 
           md:opacity-100
         `}>
           {links.map((link) => (
             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7' onClick={handleOpenMenuMobile}>
-              <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
+              <a href={link.link} className='text-gray-800 hover:text-[#F9A826] duration-500'>{link.name}</a>
             </li>
           ))}
         </ul>
