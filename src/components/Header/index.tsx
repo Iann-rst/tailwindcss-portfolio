@@ -1,54 +1,50 @@
 import { useState } from 'react';
 
+import { List, X } from 'phosphor-react';
+
 export function Header() {
+
+  const links = [
+    { name: "HOME", link: "#home" },
+    { name: "ABOUT", link: "#about" },
+    { name: "PROJETOS", link: "/" },
+    { name: "CONTATO", link: "/" },
+  ]
+
   const [menuMobile, setMenuMobile] = useState(false);
+
 
   function handleOpenMenuMobile() {
     setMenuMobile(!menuMobile);
   }
 
   return (
-    <header>
-      <nav
-        className={`bg-slate-800 text-white py-7 flex items-center justify-around ${menuMobile ? 'h-screen' : ''}`}>
-
-        <div className="absolute md:top-8 top-4 left-4" >
-          toggle
+    <header className='shadow-md w-full fixed top-0 left-0'>
+      <nav className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+        <div className='cursor-pointer flex items-center'>
+          <span className='mr-1 '>logo</span>
+          Dev. Front-end
         </div>
 
-        <ul className={`${menuMobile ? 'flex flex-col items-center text-4xl gap-20' : 'hidden'} md:text-lg md:flex md:gap-10`}>
-          <li>
-            <a href="#about" className="hover:text-orange-400">
-              Sobre mim
-            </a>
-          </li>
-          <li>
-            <a href="" className="hover:text-orange-400">
-              Projetos
-            </a>
-          </li>
+        <div className='text-3xl absolute right-8 top-4 cursor-pointer md:hidden' onClick={handleOpenMenuMobile}>
+          {menuMobile ? <X weight='bold' /> : <List weight="bold" />}
+        </div>
 
-          <li>
-            <a href="" className="hover:text-orange-400">
-              Skills
-            </a>
-          </li>
-
-          <li>
-            <a href="" className="hover:text-orange-400">
-              Contatos
-            </a>
-          </li>
+        <ul className={`
+          md:flex md:items-center md:pb-0 pb-12 absolute md:static
+          bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 
+          transition-all duration-700 ease-in 
+          ${menuMobile ? 'top-[3.6rem] opacity-100' : 'top-[-490px]  opacity-0'} 
+          md:opacity-100
+        `}>
+          {links.map((link) => (
+            <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7' onClick={handleOpenMenuMobile}>
+              <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
+            </li>
+          ))}
         </ul>
 
-        <button onClick={handleOpenMenuMobile} className="md:hidden absolute top-4 right-4">
-          <div className="w-10 h-1 bg-orange-400 mb-1"></div>
-          <div className="w-10 h-1 bg-orange-400 mb-1"></div>
-          <div className="w-10 h-1 bg-orange-400 mb-1"></div>
-        </button>
-      </nav >
-
-
+      </nav>
     </header >
   )
 }
