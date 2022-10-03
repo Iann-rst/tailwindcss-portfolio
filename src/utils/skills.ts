@@ -5,6 +5,7 @@ import cssLogo from '../assets/icones/CSS3.svg';
 import reactLogo from '../assets/icones/react.svg'
 import tailwindLogo from '../assets/icones/tailwindcss.png';
 import typescriptLogo from '../assets/icones/typescript.svg';
+import figmaLogo from '../assets/icones/figma.svg';
 
 export const skills = [
   { name: 'HTML', svg: htmlLogo },
@@ -14,4 +15,5 @@ export const skills = [
   { name: 'React', svg: reactLogo },
   { name: 'Tailwind CSS', svg: tailwindLogo },
   { name: 'React Native', svg: reactLogo },
+  { name: 'Figma', svg: figmaLogo }
 ]
