@@ -20,7 +20,7 @@ export function Header() {
   }
 
   return (
-    <header className='shadow-md w-full fixed top-0 left-0'>
+    <header className='shadow-md w-full fixed top-0 left-0 z-50'>
       <nav className='md:flex items-center justify-between bg-[#EBEBEB] dark:bg-[#2C2C2C] dark:text-white text-[#F9A826] py-4 md:px-10 px-7'>
         <div className='cursor-pointer flex items-center'>
           <span className='mr-1 '>logo</span>
