@@ -52,42 +52,42 @@ export function Projects() {
 
           <div className="keen-slider__slide number-slide1 px-2 flex flex-col items-center">
             <h1 className='text-base md:text-3xl font-bold text-center'>NLW eSports</h1>
-            <a href="" target="_blank" title="NLW ESPORTS">
+            <a href="https://github.com/Iann-rst/nlw_eSports" target="_blank" title="NLW ESPORTS">
               < img className="min-w-[304px] w-auto h-80" src={nlwEsportLogo} alt="" />
             </a >
           </div >
 
           <div className="keen-slider__slide number-slide2 px-2 flex flex-col items-center">
             <h1 className='text-base md:text-3xl font-bold text-center'>Origin Six</h1>
-            <a title="Origin Six" href="">
+            <a title="Origin Six" href="https://github.com/Iann-rst/NLW06-Origin" target="_blank">
               <img className="min-w-[304px] w-auto h-80" src={originSixLogo} alt="" />
             </a>
           </div>
 
           <div className="keen-slider__slide number-slide3 flex flex-col items-center px-2">
             <h1 className='text-base md:text-3xl font-bold text-center'>RentX - app para locação de carros.</h1>
-            <a title="Origin Six" href="">
+            <a title="RentX" href="https://github.com/Iann-rst/rentX" target="_blank">
               <img className="min-w-[304px] w-auto h-80" src={rentX} alt="" />
             </a>
           </div>
 
           <div className="keen-slider__slide number-slide4 flex flex-col items-center px-2">
             <h1 className='text-base md:text-3xl font-bold  text-center'>GoFinances - app de controle de gastos pessoais</h1>
-            <a title="Origin Six" href="">
+            <a title="GoFinances" href="https://github.com/Iann-rst/GoFinances" target="_blank">
               <img className="min-w-[304px] w-auto h-80" src={goFinances} alt="" />
             </a>
           </div>
 
           <div className="keen-slider__slide number-slide5 flex flex-col items-center px-2">
             <h1 className='text-base md:text-3xl font-bold  text-center'>Proffy - Plataforma de estudos online</h1>
-            <a title="Origin Six" href="">
+            <a title="Proffy" href="https://github.com/Iann-rst/Proffys" target="_blank">
               <img className="min-w-[304px] w-auto h-80" src={proffy} alt="" />
             </a>
           </div>
 
           <div className="keen-slider__slide number-slide6 flex flex-col items-center px-2">
             <h1 className='text-base md:text-3xl font-bold  text-center'>Rocket Help - Gerencie solicitações de suporte a equipamentos.</h1>
-            <a title="Origin Six" href="">
+            <a title="Rocket Help" href="https://github.com/Iann-rst/rocketHelp" target="_blank">
               <img className="min-w-[304px] w-auto h-80" src={rocketHelp} alt="" />
             </a>
           </div>
