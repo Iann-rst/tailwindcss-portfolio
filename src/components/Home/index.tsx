@@ -2,8 +2,8 @@ import Logo from '../../assets/logo-home.svg';
 
 export function Home() {
   return (
-    <section className='bg-white'>
-      <div id="home" className="md:max-w-[1344px] md:mx-auto md:flex-row-reverse md:justify-between h-screen  text-black md:pt-20 pt-16 md:px-10 px-7 flex flex-col items-center">
+    <section className='bg-white dark:bg-black'>
+      <div id="home" className="md:max-w-[1344px] md:mx-auto md:flex-row-reverse md:justify-between h-screen  text-black dark:text-white md:pt-20 pt-16 md:px-10 px-7 flex flex-col items-center">
 
         <div className="mt-10 md:mt-5">
           <img className="md:w-[600px] md:h-[784px]" src={Logo} alt="" />

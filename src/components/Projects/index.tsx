@@ -44,7 +44,7 @@ export function Projects() {
     ]
   );
   return (
-    <section id="projects" className='bg-[#ebebeb]'>
+    <section id="projects" className='bg-[#ebebeb] dark:bg-[#2C2C2C] dark:text-white'>
       <div className="md:max-w-[1344px] md:mx-auto h-screen md:pt-20 pt-16 md:px-16 px-7 flex items-center flex-col">
         <h1 className="text-4xl font-bold">Meus Projetos</h1>
 

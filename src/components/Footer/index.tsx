@@ -2,7 +2,7 @@ import { LinkedinLogo, GithubLogo, WhatsappLogo, EnvelopeSimple } from 'phosphor
 
 export function Footer() {
   return (
-    <footer className="h-20 w-full flex justify-center items-center">
+    <footer className="h-20 w-full flex justify-center items-center dark:bg-black dark:text-white">
       <div>
         <ul className='flex gap-4'>
           <li>

@@ -5,14 +5,14 @@ import Avatar from '../../assets/avatar.png';
 
 export function About() {
   return (
-    <section className="bg-[#ebebeb] md:h-screen">
+    <section className="bg-[#ebebeb] dark:bg-[#2C2C2C] md:h-screen">
       <div id="about" className="md:max-w-[1344px] md:mx-auto md:pt-20 pt-16 md:px-16 px-7 flex flex-col items-center md:flex-row md:gap-12">
 
-        <div className="mt-8 w-40 h-40 md:w-80 md:h-80 bg-black rounded-full flex-shrink-0 border-2 border-black overflow-hidden">
+        <div className="mt-8 w-40 h-40 md:w-80 md:h-80 bg-black  rounded-full flex-shrink-0 overflow-hidden">
           <img src="https://github.com/Iann-rst.png" alt="" />
         </div>
 
-        <div className="flex flex-col items-center md:items-start md:mt-5">
+        <div className="flex flex-col items-center md:items-start md:mt-5 dark:text-white">
           <h2 className="my-20 text-4xl font-bold md:my-0 md:mb-10">Sobre mim</h2>
 
           <p className="text-justify">
